@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChubbyBoy🐱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>I'm just a chubby cat</h1>
+    <div class="full🐱" id="fullBox">
+        <img src="./img/3.jpg" id="fullImg">
+        <span class="closeButt" onclick="closeFullImg()">X</span>
+    </div>
+    <div class="🐱">
+        <img src="./img/3.jpg" alt="cat3" onclick="openFullImg(this.src)">
+        <img src="./img/4.jpg" alt="cat4" onclick="openFullImg(this.src)">
+        <img src="./img/5.jpg" alt="cat5" onclick="openFullImg(this.src)">
+        <img src="./img/7.jpg" alt="cat7" onclick="openFullImg(this.src)">
+        <img src="./img/8.jpg" alt="cat8" onclick="openFullImg(this.src)">
+        <img src="./img/9.jpg" alt="cat9" onclick="openFullImg(this.src)">
+        <img src="./img/10.jpg" alt="cat10" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        let fullBox = document.getElementById("fullBox");
+        let fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullBox.style.display = "flex";
+            fullImg.src = pic;
+        };
+
+        function closeFullImg(){
+            fullBox.style.display = "none";
+        };
+    </script>
+</body>
+</html>
